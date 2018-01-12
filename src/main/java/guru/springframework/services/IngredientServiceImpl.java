@@ -64,7 +64,7 @@ public class IngredientServiceImpl implements IngredientService {
     @Override
     public IngredientCommand saveIngredientCommand(IngredientCommand command) {
         Optional<Recipe> recipeOptional = recipeRepository.findById(command.getRecipeId());
-
+//dummy
         if(!recipeOptional.isPresent()){
 
             //todo toss error if not found!
